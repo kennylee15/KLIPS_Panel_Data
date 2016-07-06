@@ -34,7 +34,7 @@ drop if pid == .
 foreach var of varlist * {
 	drop if `var' == -1 
 }
-'''
+```
 As seen above, the script is set to retrieve data from wave 2 to wave 17. This range can be adjusted to extract the wave of primary interest. The script first cleanses personal data and then moves on to household data. Also, note that the range of the loop has to be the same for both personal and household data.
 For instance, if one is extracting data from wave 1 to wave 15 from personal data, one has to extract from wave 1 to wave 15 from household data as well.
 
